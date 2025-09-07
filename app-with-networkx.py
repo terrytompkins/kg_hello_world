@@ -35,6 +35,8 @@ def load_graph_from_json(json_data, merge=True):
             # Replace the current graph
             st.session_state.graph = new_graph
             st.success("Graph replaced successfully!")
+        # Force a rerun to update the visualization
+        st.rerun()
     except Exception as e:
         st.error(f"Failed to load graph: {str(e)}")
 
@@ -51,6 +53,8 @@ if st.sidebar.button("Add Relationship", key="add_relationship"):
     if node1 and relation and node2:
         st.session_state.graph.add_edge(node1, node2, label=relation)
         st.sidebar.success(f"Added: {node1} --[{relation}]--> {node2}")
+        # Force a rerun to update the visualization
+        st.rerun()
     else:
         st.sidebar.error("Fill all fields.")
 
