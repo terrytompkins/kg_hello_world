@@ -1,0 +1,18 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {"id": "Max"},
+    {"id": "Mrs. Emily Johnson"},
+    {"id": "arthritis"},
+    {"id": "glucosamine"},
+    {"id": "carprofen"}
+  ],
+  "links": [
+    {"source": "Max", "target": "Mrs. Emily Johnson", "label": "owned_by"},
+    {"source": "Max", "target": "arthritis", "label": "has_condition"},
+    {"source": "Max", "target": "glucosamine", "label": "treated_with"},
+    {"source": "Max", "target": "carprofen", "label": "treated_with"}
+  ]
+}

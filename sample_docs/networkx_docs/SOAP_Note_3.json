@@ -1,0 +1,20 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {"id": "Max"},
+    {"id": "Mrs. Emily Johnson"},
+    {"id": "gastroenteritis"},
+    {"id": "glucosamine"},
+    {"id": "Heartgard Plus"},
+    {"id": "Dr. Smith"}
+  ],
+  "links": [
+    {"source": "Max", "target": "Mrs. Emily Johnson", "label": "owned_by"},
+    {"source": "Max", "target": "gastroenteritis", "label": "had_condition"},
+    {"source": "Max", "target": "glucosamine", "label": "treated_with"},
+    {"source": "Max", "target": "Heartgard Plus", "label": "prescribed"},
+    {"source": "Max", "target": "Dr. Smith", "label": "treated_by"}
+  ]
+}

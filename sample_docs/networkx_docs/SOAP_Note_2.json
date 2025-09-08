@@ -1,0 +1,18 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {"id": "Max"},
+    {"id": "Mrs. Emily Johnson"},
+    {"id": "gastroenteritis"},
+    {"id": "metronidazole"},
+    {"id": "glucosamine"}
+  ],
+  "links": [
+    {"source": "Max", "target": "Mrs. Emily Johnson", "label": "owned_by"},
+    {"source": "Max", "target": "gastroenteritis", "label": "has_condition"},
+    {"source": "Max", "target": "metronidazole", "label": "treated_with"},
+    {"source": "Max", "target": "glucosamine", "label": "treated_with"}
+  ]
+}
